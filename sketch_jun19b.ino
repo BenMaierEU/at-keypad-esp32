@@ -3,7 +3,7 @@
  */
 #include <BleKeyboard.h>
 
-int analogPin = 33; 
+int analogPin = 33;
 int val = 0;
 
 BleKeyboard bleKeyboard("AllTrails Pad", "Benedikt Maier", 100);
@@ -25,7 +25,7 @@ void loop() {
         int anR = analogRead(analogPin);
         total[index] = anR;
         int index = index +1;
-        
+
        // int average = (average + analogRead(analogPin)) / 2;
        // if (anR < 5) { break;
        // Serial.println(average);}
@@ -36,7 +36,7 @@ void loop() {
   }
 
 
-    
+
 // if(analogRead(analogPin) > 3110 ) {
 ////    bleKeyboard.press(KEY_LEFT_ALT);
 ////    bleKeyboard.press(122);
